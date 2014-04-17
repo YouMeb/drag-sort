@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <ul>
+    <li data-id="1" class="item"><span class="handler">handler</span>item1
+    <li data-id="2" class="item"><span class="handler">handler</span>item2
+    <li data-id="3" class="item"><span class="handler">handler</span>item3
+    <li data-id="4" class="item"><span class="handler">handler</span>item4
+    <li data-id="5" class="item"><span class="handler">handler</span>item5
+    <li data-id="6" class="item"><span class="handler">handler</span>item6
+  </ul>
+  <script src="build/build.js"></script>
+  <script>
+    var dragsort = require('drag-sort');
+    var ul = document.querySelector('ul');
+
+    var ctrl = dragsort(ul, {
+      item: '.item',
+      handler: '.handler'
+    });
+
+    ctrl.on('change', function (items) {
+      console.log(items);
+    });
+  </script>
+</body>
+</html>

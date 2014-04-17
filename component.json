@@ -1,0 +1,22 @@
+{
+  "name": "drag-sort",
+  "repo": "poying/drag-sort",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "drage",
+    "sort",
+    "list"
+  ],
+  "scripts": [
+    "index.js"
+  ],
+  "dependencies": {
+    "component/emitter": "*",
+    "poying/inline-style": "*",
+    "poying/inline-style-auto-prefix": "*",
+    "component/events": "*",
+    "yields/prevent": "*",
+    "yields/traverse": "*"
+  }
+}
