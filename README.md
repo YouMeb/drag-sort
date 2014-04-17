@@ -1,6 +1,8 @@
 drag-sort
 ---------
 
+![screenshot](./screenshot.png)
+
 ```javascript
 var dragsort = require('drag-sort');
 var ul = document.querySelector('ul');
